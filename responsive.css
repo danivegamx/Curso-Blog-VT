@@ -1,0 +1,251 @@
+@media screen and (min-width: 768px)
+{
+	body
+	{
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	footer
+	{
+		background: #434343;
+		color: white;
+		margin-right: 80px;
+		margin-left: 80px;
+		padding: 1em 0;
+		text-align: center;
+	}
+	footer p
+	{
+		margin: 0;
+	}
+	header
+	{
+		background: #434343;
+		color: white;
+		margin: 0 80px 0 80px;
+		padding: 0.5em;
+	}
+	header figure, header h1
+	{
+		display: inline-block;
+		margin-left: 1em;
+		vertical-align: top;
+	}
+	header h1
+	{
+		font-family: 'Maven Pro', sans-serif;
+		font-size:  20px;
+		font-weight: normal;
+	}
+	header #logo img
+	{
+		display: block;
+		width: 80px;
+	}
+	header #avatar
+	{
+		background: rgba(243,243,243,0.3);
+		border-radius: 0.2em;
+		float: right;
+		margin: 1em 1em 0 0;
+		padding: 0.25em;
+	}
+	header #avatar figcaption
+	{
+		background: #22BCE0;
+		border-radius: 0 0.5em 0.5em 0;
+		float: right;
+		height: 50px;
+		line-height: 50px;
+	}
+	header #avatar figcaption:after
+	{
+		font-family: "icomoon";
+		content: "\e600";
+	}
+	header #avatar img
+	{
+		float: left;
+		width: 50px;
+	}
+	nav
+	{
+		background: #878787;
+		font-family: 'Maven Pro', sans-serif;
+		font-size: 1em;
+		font-weight: bold;
+		margin: 0 80px 0 80px;
+	}
+	#bienvenida
+	{
+		border-bottom: 1px solid #CCC;
+		display: block;
+		float: right;
+		margin-right: 80px;
+		width: 25%;
+	}
+	#bienvenida h2
+	{
+		color: #434343;
+	}
+	#bienvenida p
+	{
+		text-align: justify;
+	}
+	#bienvenida #registro,
+	#bienvenida #lic
+	{
+		text-align: center;
+	}
+	#bienvenida #registro
+	{
+		background: #22BCE0;
+		color: white;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.5em 1em;
+	}
+	#bienvenida #lic
+	{
+		font-size: 0.6em;
+	}
+	#inicio a:after
+	{
+		color: white;
+		content: "Inicio";
+		font-family: 'Maven Pro', sans-serif;
+	}
+	#perfil a:after
+	{
+		color: white;
+		content: "Perfl";
+		font-family: 'Maven Pro', sans-serif;
+	}
+	#mensajes a:after
+	{
+		color: white;
+		content: "Mensajes";
+		font-family: 'Maven Pro', sans-serif;
+	}
+	#conecta a:after
+	{
+		color: white;
+		content: "Conecta";
+		font-family: 'Maven Pro', sans-serif;
+	}
+	#descubre a:after
+	{
+		color: white;
+		content: "Descubre";
+		font-family: 'Maven Pro', sans-serif;
+	}
+	#contenido
+	{
+		margin: 0 80px 0 80px;
+		width: 60%;
+	}
+	#contenido .item
+	{
+		background: white;
+		border-bottom: 3px #22BCE0 solid;
+		margin-bottom: 3em;
+		min-height: 170px;
+		position: relative;
+	}
+	#contenido .item p
+	{
+		color: #7A7A7A;
+		font-size: 0.9em;
+	}
+	#contenido .item .datos_item
+	{
+		padding: 0 0 0 4px;
+		text-align: right;
+	}
+	#contenido .item .datos_item .comentarios_item
+	{
+		background: #878787;
+		border-radius: 4px;
+		color: white;
+		margin: 0 0 0 1em;
+		padding: 4px;
+	}
+	#contenido .item .datos_item .fecha_item
+	{
+		font-size: 1em;
+	}
+	#contenido .item .datos_item .flecha_item
+	{
+		margin: 0 1em 0 1em;
+	}
+	#contenido .item .datos_item .flecha_item:after
+	{
+		color: #FD5;
+		content: "\e605";
+		font-family: "icomoon";
+	}
+	#contenido .item .datos_item .leer
+	{
+		background: #22BCE0;
+		border-radius: 0.5em;
+		color: white;
+		float: left;
+		margin-left: 0;
+		padding: 0.2em 1.2em;
+	}
+	#contenido .item .img_item
+	{
+		float: left;
+		margin: 0.5em 1.2em 0.5em 0.5em;
+	}
+	#contenido .item .img_item img
+	{
+		width: 155px;
+	}
+	#contenido .item .titulo_item
+	{
+		font-size: 1.2em;
+		font-style: italic;
+		padding: 0.5em 0.5em 0;
+	}
+	#contenido .item .titulo_item a
+	{
+		color: #444;
+		text-decoration: none;
+	}
+	#contenido .item .votacion
+	{
+		background: white;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		margin: 0;
+		margin-left: 9px;
+		padding: 0.5em 0;
+		position: absolute;
+		text-align: center;
+		top: 100%;
+		width: 155px;
+	}
+	#contenido .item .votacion .up:after,
+	#contenido .item .votacion .down:after
+	{
+		font-family: "icomoon";
+	}
+	#contenido .item .votacion .up:after
+	{
+		color: green;
+		content: "\e603";
+		margin-right: 1.5em;
+	}
+	#contenido .item .votacion .down:after
+	{
+		color: red;
+		content: "\e604";
+		margin-left: 1.5em;
+	}
+	#publicar_nav a:before
+	{
+		content: "Crear nuevo post  ";
+		font-family: 'Maven Pro', sans-serif;
+	}
+}

@@ -1,7 +1,22 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a
 {
 	color: #DD4F24;
 	text-decoration: none;
+}
+#bienvenida
+{
+	display: none;
 }
 body
 {
@@ -11,40 +26,67 @@ body
 	font-size: 16px;
 	margin: 0px;
 }
+footer
+{
+	background: #434343;
+	color: white;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 1em 0;
+	text-align: center;
+}
+footer p
+{
+	margin: 0;
+}
 header
 {
 	background: #434343;
 	color: white;
-	margin: 0 80px 0 80px;
+	margin: 0 10px 0 10px;
+	min-height: 90px;
 	padding: 0.5em;
 }
 header figure, header h1
 {
 	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
 	vertical-align: top;
 }
 header h1
 {
 	font-family: 'Maven Pro', sans-serif;
-	font-size:  20px;
+	font-size:  1em;
 	font-weight: normal;
-	margin: 1.5em 0 0 1em;
+	margin: 1em 0 0 1em;
 }
 header #logo img
 {
-	width: 80px;
+	display: none;
+	width: 50px;
 }
 header #avatar
 {
+	background: rgba(243,243,243,0.3);
+	border-radius: 0.2em;
 	float: right;
-	margin: 2em 1em 0 0;
+	margin: 1em 1em 0 0;
+	padding: 0.25em;
 }
 header #avatar figcaption
 {
 	background: #22BCE0;
+	border-radius: 0 0.5em 0.5em 0;
+	color: white;
 	float: right;
 	height: 50px;
-	padding: 0 2px;
+	line-height: 50px;
+}
+header #avatar figcaption:after
+{
+	font-family: "icomoon";
+	content: "\e600";
 }
 header #avatar img
 {
@@ -57,7 +99,7 @@ nav
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 1em;
 	font-weight: bold;
-	margin: 0 80px 0 80px;
+	margin: 0 10px 0 10px;
 }
 nav ul
 {
@@ -68,7 +110,7 @@ nav ul
 nav ul li
 {
 	display: inline-block;
-	margin: 0 1.2em 0 0;
+	margin: 0 1em 0 0;
 	vertical-align: top;
 }
 nav ul li a
@@ -95,25 +137,98 @@ nav #publicar_nav a
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
+#inicio a:after
+{
+	color: white;
+	content: "\e607";
+	font-family: "icomoon";
+}
+#perfil a:after
+{
+	color: white;
+	content: "\e608";
+	font-family: "icomoon";
+}
+#mensajes a:after
+{
+	color: white;
+	content: "\e609";
+	font-family: "icomoon";
+}
+#conecta a:after
+{
+	color: white;
+	content: "\e60a";
+	font-family: "icomoon";
+}
+#descubre a:after
+{
+	color: white;
+	content: "\e60b";
+	font-family: "icomoon";
+}
 #contenido
 {
-	margin: 0 80px 0 80px;
+	margin: 0 10px 0 10px;
 }
 #contenido .item
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	margin-bottom: 3em;
+	min-height: 170px;
+	position: relative;
 }
 #contenido .item p
 {
 	color: #7A7A7A;
 	font-size: 0.9em;
 }
+#contenido .item .datos_item
+{
+	padding: 0 0 0 4px;
+	text-align: right;
+}
+#contenido .item .datos_item .comentarios_item
+{
+	background: #878787;
+	border-radius: 4px;
+	color: white;
+	margin: 0 0 0 0.3em;
+	padding: 4px;
+	position: relative;
+}
+#contenido .item .datos_item .comentarios_item:after
+{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #878787;
+	content: "";
+	left: 10px;
+	position: absolute;
+	top: 100%;
+}
+#contenido .item .datos_item .fecha_item
+{
+	font-size: 0.8em;
+}
+#contenido .item .datos_item .flecha_item
+{
+	margin: 0 1em 0 0.3em;
+}
+#contenido .item .datos_item .flecha_item:after
+{
+	color: #FD5;
+	content: "\e605";
+	font-family: "icomoon";
+}
 #contenido .item .datos_item .leer
 {
 	background: #22BCE0;
 	border-radius: 0.5em;
 	color: white;
+	float: left;
+	margin-left: 4.2em;
 	padding: 0.2em 0.5em;
 }
 #contenido .item .img_item
@@ -135,4 +250,44 @@ nav #publicar_nav a
 {
 	color: #444;
 	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 0;
+	margin-left: 9px;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 155px;
+}
+#contenido .item .votacion .up:after,
+#contenido .item .votacion .down:after
+{
+	font-family: "icomoon";
+}
+#contenido .item .votacion .up:after
+{
+	color: green;
+	content: "\e603";
+	margin-right: 1.5em;
+}
+#contenido .item .votacion .down:after
+{
+	color: red;
+	content: "\e604";
+	margin-left: 1.5em;
+}
+#flecha_nav a:after
+{
+	content: "\e601";
+	font-family: "icomoon";
+}
+#publicar_nav a:after
+{
+	content: "\e602";
+	font-family: "icomoon";
 }
